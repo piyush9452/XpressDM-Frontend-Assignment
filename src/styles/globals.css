@@ -1,0 +1,35 @@
+/* ── Nacelle Font Faces ─────────────────────────────────────────── */
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-Thin.otf") format("opentype"); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-ThinItalic.otf") format("opentype"); font-weight: 100; font-style: italic; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-UltraLight.otf") format("opentype"); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-UltraLightItalic.otf") format("opentype"); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-Light.otf") format("opentype"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-LightItalic.otf") format("opentype"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-Italic.otf") format("opentype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-SemiBold.otf") format("opentype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-SemiBoldItalic.otf") format("opentype"); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-Bold.otf") format("opentype"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-BoldItalic.otf") format("opentype"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-Heavy.otf") format("opentype"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-HeavyItalic.otf") format("opentype"); font-weight: 800; font-style: italic; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-Black.otf") format("opentype"); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nacelle"; src: url("/fonts/Nacelle-BlackItalic.otf") format("opentype"); font-weight: 900; font-style: italic; font-display: swap; }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body { font-family: "Nacelle", sans-serif; background-color: #0D0D0D; color: #FFFFFF; line-height: 1.6; }
+}
+
+@layer utilities {
+  .gradient-brand { background: linear-gradient(90deg, #F97316 0%, #EC4899 50%, #8B5CF6 100%); }
+  .gradient-brand-text { background: linear-gradient(90deg, #F97316 0%, #EC4899 50%, #8B5CF6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .page-glow { background: radial-gradient(ellipse 70% 40% at 50% 60%, rgba(139,92,246,0.18) 0%, transparent 70%), radial-gradient(ellipse 40% 30% at 50% 80%, rgba(236,72,153,0.12) 0%, transparent 60%), #0D0D0D; }
+  .pro-glow { box-shadow: 0 0 0 1.5px #C0392B, 0 8px 40px rgba(224,74,31,0.3); }
+  .pro-col-highlight { background: rgba(224,74,31,0.06); border-left: 1px solid rgba(224,74,31,0.45); border-right: 1px solid rgba(224,74,31,0.45); }
+}
